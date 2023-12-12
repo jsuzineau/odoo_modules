@@ -7,6 +7,9 @@
 'application':True,
 'data':[
        'security/ir.model.access.csv',
+       'data/jsworks.categorie.csv',
+       'data/jsworks.state.csv',
+       'data/jsworks.type_tag.csv',
         'views/categorie.xml',
        'views/development.xml',
        'views/project.xml',

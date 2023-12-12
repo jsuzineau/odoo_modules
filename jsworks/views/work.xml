@@ -26,6 +26,7 @@
         <field name="arch" type="xml">
             <form string="work">
                 <sheet>
+                    <group>
               <field name="nProject" />
               <field name="Beginning" />
               <field name="End" />
@@ -33,6 +34,7 @@
               <field name="nUser" /> 
 <!--views_class_py_many_to_one_field_line-->
               <field name="Development" /> 
+                    </group>
                 </sheet>
             </form>
         </field>

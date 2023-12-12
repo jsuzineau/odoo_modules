@@ -27,8 +27,6 @@
               <field name="CreationWork" />
               <field name="SolutionWork" />
               <field name="Categorie" />
-              <!--<field name="Demander" />-->
-              <!--<field name="SheetRef" />-->
 <!--views_class_py_one_to_many_field_line-->
             </tree>
         </field>
@@ -39,6 +37,7 @@
         <field name="arch" type="xml">
             <form string="development">
                 <sheet>
+                    <group>
               <field name="nProject" />
               <field name="nState" />
               <field name="nCreationWork" />
@@ -56,9 +55,8 @@
               <field name="CreationWork" />
               <field name="SolutionWork" />
               <field name="Categorie" />
-              <!--<field name="Demander" />-->
-              <!--<field name="SheetRef" />-->
 <!--views_class_py_one_to_many_field_line-->
+                    </group>
                 </sheet>
             </form>
         </field>

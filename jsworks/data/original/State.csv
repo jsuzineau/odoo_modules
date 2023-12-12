@@ -1,0 +1,6 @@
+id,Symbol,Description
+1,-,Point non traite
+2,/,"Point traite, non teste"
+3,X,Point realise
+4,?,Point dans un etat incertain
+5,(),Laisse de cote
