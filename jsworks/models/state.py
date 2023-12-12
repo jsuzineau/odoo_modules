@@ -3,6 +3,7 @@ from odoo import api,fields, models, exceptions
 class State(models.Model):
     _name= "jsworks.state"
     _description = "State"
+    _rec_name = "Symbol"
 
     Symbol=fields.Char()
     Description=fields.Char() 

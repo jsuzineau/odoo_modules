@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <odoo>
     <record id="jsworks_state_action" model="ir.actions.act_window">
-        <field name="name">state</field>
+        <field name="name">State</field>
         <field name="res_model">jsworks.state</field>
         <field name="view_mode">tree,form</field>
     </record>
@@ -9,11 +9,9 @@
         <field name="name">jsworks.state.tree</field>
         <field name="model">jsworks.state</field>
         <field name="arch" type="xml">
-            <tree string="state">
+            <tree string="States">
               <field name="Symbol" />
               <field name="Description" /> 
-<!--views_class_py_many_to_one_field_line-->
-<!--views_class_py_one_to_many_field_line-->
             </tree>
         </field>
     </record>
@@ -21,13 +19,11 @@
         <field name="name">jsworks.state.form</field>
         <field name="model">jsworks.state</field>
         <field name="arch" type="xml">
-            <form string="state">
+            <form string="State">
                 <sheet>
                     <group>
-              <field name="Symbol" />
-              <field name="Description" /> 
-<!--views_class_py_many_to_one_field_line-->
-<!--views_class_py_one_to_many_field_line-->
+                      <field name="Symbol" />
+                      <field name="Description" />
                     </group>
                 </sheet>
             </form>

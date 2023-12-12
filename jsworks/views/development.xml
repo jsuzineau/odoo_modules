@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <odoo>
     <record id="jsworks_development_action" model="ir.actions.act_window">
-        <field name="name">development</field>
+        <field name="name">Development</field>
         <field name="res_model">jsworks.development</field>
         <field name="view_mode">tree,form</field>
     </record>
@@ -9,25 +9,17 @@
         <field name="name">jsworks.development.tree</field>
         <field name="model">jsworks.development</field>
         <field name="arch" type="xml">
-            <tree string="development">
-              <field name="nProject" />
-              <field name="nState" />
-              <field name="nCreationWork" />
-              <field name="nSolutionWork" />
+            <tree string="Developments">
               <field name="Description" />
               <field name="Steps" />
               <field name="Origin" />
               <field name="Solution" />
-              <field name="nCategorie" />
               <field name="isBug" />
-              <field name="nDemander" />
-              <field name="nSheetRef" /> 
               <field name="Project" />
               <field name="State" />
               <field name="CreationWork" />
               <field name="SolutionWork" />
               <field name="Categorie" />
-<!--views_class_py_one_to_many_field_line-->
             </tree>
         </field>
     </record>
@@ -35,27 +27,19 @@
         <field name="name">jsworks.development.form</field>
         <field name="model">jsworks.development</field>
         <field name="arch" type="xml">
-            <form string="development">
+            <form string="Development">
                 <sheet>
                     <group>
-              <field name="nProject" />
-              <field name="nState" />
-              <field name="nCreationWork" />
-              <field name="nSolutionWork" />
-              <field name="Description" />
-              <field name="Steps" />
-              <field name="Origin" />
-              <field name="Solution" />
-              <field name="nCategorie" />
-              <field name="isBug" />
-              <field name="nDemander" />
-              <field name="nSheetRef" /> 
-              <field name="Project" />
-              <field name="State" />
-              <field name="CreationWork" />
-              <field name="SolutionWork" />
-              <field name="Categorie" />
-<!--views_class_py_one_to_many_field_line-->
+                      <field name="Description" />
+                      <field name="Steps" />
+                      <field name="Origin" />
+                      <field name="Solution" />
+                      <field name="isBug" />
+                      <field name="Project" />
+                      <field name="State" />
+                      <field name="CreationWork" />
+                      <field name="SolutionWork" />
+                      <field name="Categorie" />
                     </group>
                 </sheet>
             </form>

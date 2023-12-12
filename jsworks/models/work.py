@@ -3,11 +3,10 @@ from odoo import api,fields, models, exceptions
 class Work(models.Model):
     _name= "jsworks.work"
     _description = "Work"
+    _rec_name = "Beginning"
 
-    nProject=fields.Integer()
-    Beginning=fields.Char()
-    End=fields.Char()
-    Description=fields.Char()
-    nUser=fields.Integer() 
-#models_class.py_many_to_one_creation_line
-    Development=fields.One2many("jsworks.development","CreationWork") 
+    Beginning=fields.Datetime( default=lambda self : fields.Datetime.now())
+    End=fields.Datetime()
+    Description=fields.Text()
+    Project = fields.Many2one("jsworks.project")
+    Developments=fields.One2many("jsworks.development","CreationWork")

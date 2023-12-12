@@ -7,11 +7,8 @@
              <menuitem id="jsworks_project_action_menu_item" action="jsworks_project_action"/>
              <menuitem id="jsworks_state_action_menu_item" action="jsworks_state_action"/>
              <menuitem id="jsworks_tag_action_menu_item" action="jsworks_tag_action"/>
-             <menuitem id="jsworks_tag_development_action_menu_item" action="jsworks_tag_development_action"/>
-             <menuitem id="jsworks_tag_work_action_menu_item" action="jsworks_tag_work_action"/>
              <menuitem id="jsworks_type_tag_action_menu_item" action="jsworks_type_tag_action"/>
              <menuitem id="jsworks_work_action_menu_item" action="jsworks_work_action"/>
- 
         </menuitem>
     </menuitem>
 </odoo>

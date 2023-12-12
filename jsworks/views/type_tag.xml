@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <odoo>
     <record id="jsworks_type_tag_action" model="ir.actions.act_window">
-        <field name="name">type_tag</field>
+        <field name="name">Type Tag</field>
         <field name="res_model">jsworks.type_tag</field>
         <field name="view_mode">tree,form</field>
     </record>
@@ -9,10 +9,8 @@
         <field name="name">jsworks.type_tag.tree</field>
         <field name="model">jsworks.type_tag</field>
         <field name="arch" type="xml">
-            <tree string="type_tag">
+            <tree string="Type_tags">
               <field name="Name" /> 
-<!--views_class_py_many_to_one_field_line-->
-<!--views_class_py_one_to_many_field_line-->
             </tree>
         </field>
     </record>
@@ -20,13 +18,16 @@
         <field name="name">jsworks.type_tag.form</field>
         <field name="model">jsworks.type_tag</field>
         <field name="arch" type="xml">
-            <form string="type_tag">
+            <form string="Type_tag">
                 <sheet>
                     <group>
-              <field name="Name" /> 
-<!--views_class_py_many_to_one_field_line-->
-<!--views_class_py_one_to_many_field_line-->
+                      <field name="Name" />
                     </group>
+                    <notebook>
+                        <page string="Tags">
+                            <field name="Tags" />
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>

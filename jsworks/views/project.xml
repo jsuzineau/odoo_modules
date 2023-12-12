@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <odoo>
     <record id="jsworks_project_action" model="ir.actions.act_window">
-        <field name="name">project</field>
+        <field name="name">Project</field>
         <field name="res_model">jsworks.project</field>
         <field name="view_mode">tree,form</field>
     </record>
@@ -9,10 +9,8 @@
         <field name="name">jsworks.project.tree</field>
         <field name="model">jsworks.project</field>
         <field name="arch" type="xml">
-            <tree string="project">
+            <tree string="Projects">
               <field name="Name" /> 
-<!--views_class_py_many_to_one_field_line-->
-<!--views_class_py_one_to_many_field_line-->
             </tree>
         </field>
     </record>
@@ -20,13 +18,19 @@
         <field name="name">jsworks.project.form</field>
         <field name="model">jsworks.project</field>
         <field name="arch" type="xml">
-            <form string="project">
+            <form string="Project">
                 <sheet>
                     <group>
-              <field name="Name" /> 
-<!--views_class_py_many_to_one_field_line-->
-<!--views_class_py_one_to_many_field_line-->
+                        <field name="Name" />
                     </group>
+                    <notebook>
+                        <page string="Works">
+                            <field name="Works" />
+                        </page>
+                        <page string="Developments">
+                            <field name="Developments" />
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>

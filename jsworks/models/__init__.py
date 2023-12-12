@@ -2,8 +2,6 @@ from . import categorie
 from . import project
 from . import state
 from . import tag
-from . import tag_development
-from . import tag_work
 from . import type_tag
 from . import work 
 from . import development

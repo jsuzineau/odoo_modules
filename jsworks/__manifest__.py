@@ -2,7 +2,7 @@
 'name':"jsworks",
 'license':"LGPL-3",
 'version': '1.0',
-'description':"jsworks",
+'description':"jsWorks",
 'depends':['base'],
 'application':True,
 'data':[
@@ -15,8 +15,6 @@
        'views/project.xml',
        'views/state.xml',
        'views/tag.xml',
-       'views/tag_development.xml',
-       'views/tag_work.xml',
        'views/type_tag.xml',
        'views/work.xml', 
        'views/menu.xml',
