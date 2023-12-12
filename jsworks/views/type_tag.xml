@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="jsworks_type_tag_action" model="ir.actions.act_window">
+        <field name="name">type_tag</field>
+        <field name="res_model">jsworks.type_tag</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="jsworks_type_tag_view_tree" model="ir.ui.view">
+        <field name="name">jsworks.type_tag.tree</field>
+        <field name="model">jsworks.type_tag</field>
+        <field name="arch" type="xml">
+            <tree string="type_tag">
+              <field name="Name" /> 
+<!--views_class_py_many_to_one_field_line-->
+<!--views_class_py_one_to_many_field_line-->
+            </tree>
+        </field>
+    </record>
+    <record id="jsworks_type_tag_view_form" model="ir.ui.view">
+        <field name="name">jsworks.type_tag.form</field>
+        <field name="model">jsworks.type_tag</field>
+        <field name="arch" type="xml">
+            <form string="type_tag">
+                <sheet>
+              <field name="Name" /> 
+<!--views_class_py_many_to_one_field_line-->
+<!--views_class_py_one_to_many_field_line-->
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

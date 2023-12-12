@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="jsworks_categorie_action" model="ir.actions.act_window">
+        <field name="name">categorie</field>
+        <field name="res_model">jsworks.categorie</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="jsworks_categorie_view_tree" model="ir.ui.view">
+        <field name="name">jsworks.categorie.tree</field>
+        <field name="model">jsworks.categorie</field>
+        <field name="arch" type="xml">
+            <tree string="categorie">
+              <field name="Symbol" />
+              <field name="Description" /> 
+<!--views_class_py_many_to_one_field_line-->
+<!--views_class_py_one_to_many_field_line-->
+            </tree>
+        </field>
+    </record>
+    <record id="jsworks_categorie_view_form" model="ir.ui.view">
+        <field name="name">jsworks.categorie.form</field>
+        <field name="model">jsworks.categorie</field>
+        <field name="arch" type="xml">
+            <form string="categorie">
+                <sheet>
+              <field name="Symbol" />
+              <field name="Description" /> 
+<!--views_class_py_many_to_one_field_line-->
+<!--views_class_py_one_to_many_field_line-->
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

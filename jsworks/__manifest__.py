@@ -1,0 +1,21 @@
+{
+'name':"jsworks",
+'license':"LGPL-3",
+'version': '1.0',
+'description':"jsworks",
+'depends':['base'],
+'application':True,
+'data':[
+       'security/ir.model.access.csv',
+        'views/categorie.xml',
+       'views/development.xml',
+       'views/project.xml',
+       'views/state.xml',
+       'views/tag.xml',
+       'views/tag_development.xml',
+       'views/tag_work.xml',
+       'views/type_tag.xml',
+       'views/work.xml', 
+       'views/menu.xml',
+       ]
+}

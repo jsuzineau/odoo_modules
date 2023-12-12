@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+jsworks.access_jsworks_categorie,access_jsworks_categorie,model_jsworks_categorie,base.group_user,1,1,1,1
+jsworks.access_jsworks_development,access_jsworks_development,model_jsworks_development,base.group_user,1,1,1,1
+jsworks.access_jsworks_project,access_jsworks_project,model_jsworks_project,base.group_user,1,1,1,1
+jsworks.access_jsworks_state,access_jsworks_state,model_jsworks_state,base.group_user,1,1,1,1
+jsworks.access_jsworks_tag,access_jsworks_tag,model_jsworks_tag,base.group_user,1,1,1,1
+jsworks.access_jsworks_tag_development,access_jsworks_tag_development,model_jsworks_tag_development,base.group_user,1,1,1,1
+jsworks.access_jsworks_tag_work,access_jsworks_tag_work,model_jsworks_tag_work,base.group_user,1,1,1,1
+jsworks.access_jsworks_type_tag,access_jsworks_type_tag,model_jsworks_type_tag,base.group_user,1,1,1,1
+jsworks.access_jsworks_work,access_jsworks_work,model_jsworks_work,base.group_user,1,1,1,1
+

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="jsworks_work_action" model="ir.actions.act_window">
+        <field name="name">work</field>
+        <field name="res_model">jsworks.work</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="jsworks_work_view_tree" model="ir.ui.view">
+        <field name="name">jsworks.work.tree</field>
+        <field name="model">jsworks.work</field>
+        <field name="arch" type="xml">
+            <tree string="work">
+              <field name="nProject" />
+              <field name="Beginning" />
+              <field name="End" />
+              <field name="Description" />
+              <field name="nUser" /> 
+<!--views_class_py_many_to_one_field_line-->
+              <field name="Development" /> 
+            </tree>
+        </field>
+    </record>
+    <record id="jsworks_work_view_form" model="ir.ui.view">
+        <field name="name">jsworks.work.form</field>
+        <field name="model">jsworks.work</field>
+        <field name="arch" type="xml">
+            <form string="work">
+                <sheet>
+              <field name="nProject" />
+              <field name="Beginning" />
+              <field name="End" />
+              <field name="Description" />
+              <field name="nUser" /> 
+<!--views_class_py_many_to_one_field_line-->
+              <field name="Development" /> 
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
