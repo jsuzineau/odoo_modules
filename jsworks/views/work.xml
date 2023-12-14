@@ -21,6 +21,10 @@
         <field name="model">jsworks.work</field>
         <field name="arch" type="xml">
             <form string="Work">
+                <header>
+                    <button name="action_Arreter" type="object" string="Arrêter"  />
+                    <button name="action_Redemarrer" type="object" string="Redémarrer"  />
+                </header>
                 <sheet>
                     <group>
                       <field name="Beginning" />
