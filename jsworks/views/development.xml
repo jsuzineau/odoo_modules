@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <odoo>
-    <record id="jsworks_development_action" model="ir.actions.act_window">
+    <record id="a_jsworks_development" model="ir.actions.act_window">
         <field name="name">Development</field>
         <field name="res_model">jsworks.development</field>
         <field name="view_mode">tree,form</field>

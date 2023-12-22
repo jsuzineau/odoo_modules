@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <odoo>
-    <record id="jsworks_project_action" model="ir.actions.act_window">
+    <record id="a_jsworks_project" model="ir.actions.act_window">
         <field name="name">Project</field>
         <field name="res_model">jsworks.project</field>
         <field name="view_mode">tree,form</field>
@@ -10,7 +10,7 @@
         <field name="model">jsworks.project</field>
         <field name="arch" type="xml">
             <tree string="Projects">
-              <field name="Name" /> 
+              <field name="Name" />
             </tree>
         </field>
     </record>

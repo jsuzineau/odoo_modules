@@ -6,10 +6,11 @@ class Work(models.Model):
     _rec_name = "Beginning"
 
     Beginning=fields.Datetime( default=lambda self : fields.Datetime.now())
+    @api.onchange("Beginning")
+    def _onchange_Beginning(self):
+        self._D_from_Beginning()
+
     End=fields.Datetime()
-    Description=fields.Text()
-    Project = fields.Many2one("jsworks.project")
-    Developments=fields.One2many("jsworks.development","CreationWork")
     def action_Arreter(self):
         for record in self:
             record.End= fields.Datetime.now()
@@ -18,3 +19,16 @@ class Work(models.Model):
         self.action_Arreter()
         self.env['jsworks.work'].create({'Project': self.Project, 'Description':"créé par action_Redemarrer"})
         return True
+
+    Description=fields.Text()
+
+    Project = fields.Many2one("jsworks.project")
+
+    Developments=fields.One2many("jsworks.development","CreationWork")
+
+    D=fields.Date()
+    def _D_from_Beginning(self):
+        if self.Beginning:
+            self.D= fields.Date.to_date(self.Beginning)
+
+    Jour = fields.Many2one("jsworks.jour")
