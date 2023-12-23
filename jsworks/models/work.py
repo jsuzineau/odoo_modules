@@ -5,6 +5,7 @@ class Work(models.Model):
     _description = "Work"
     _rec_name = "Beginning"
 
+    partner_id=fields.Many2one('res.partner', index=True)
     Beginning=fields.Datetime( default=lambda self : fields.Datetime.now())
     @api.onchange("Beginning")
     def _onchange_Beginning(self):

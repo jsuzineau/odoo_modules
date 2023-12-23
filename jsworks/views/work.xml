@@ -10,6 +10,7 @@
         <field name="model">jsworks.work</field>
         <field name="arch" type="xml">
             <tree string="Works">
+              <field name="partner_id" />
               <field name="Beginning" />
               <field name="End" />
               <field name="Description" />
@@ -27,6 +28,7 @@
                 </header>
                 <sheet>
                     <group>
+                      <field name="partner_id" />
                       <field name="Beginning" />
                       <field name="End" />
                       <field name="Description" />

@@ -10,6 +10,7 @@
         <field name="model">jsworks.jour</field>
         <field name="arch" type="xml">
             <tree string="Jours">
+              <field name="partner_id" />
               <field name="D" />
             </tree>
         </field>
@@ -21,10 +22,12 @@
             <form string="Jour">
                 <header>
                     <button name="action_Connecte_Works" type="object" string="Connecte_Works"  />
+                    <button name="action_Facture" type="object" string="Facture"  />
                     <button type="action" name="%(jsworks.report_action_jour)d" string="Print"/>
                 </header>
                 <sheet>
                     <group>
+                        <field name="partner_id" />
                         <field name="D" />
                     </group>
                     <notebook>
