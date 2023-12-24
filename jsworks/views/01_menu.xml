@@ -1,15 +1,18 @@
 <?xml version="1.0"?>
 <odoo>
     <menuitem id="mi_root_jsworks" name="jsworks">
-        <menuitem id="mi_jsworks" name="jsworks">
-             <menuitem id="mi_a_jsworks_categorie"   action="a_jsworks_categorie"  />
+        <menuitem id="mi_traitements" name="Traitements">
+             <menuitem id="mi_a_jsworks_work"        action="a_jsworks_work"       />
              <menuitem id="mi_a_jsworks_development" action="a_jsworks_development"/>
              <menuitem id="mi_a_jsworks_project"     action="a_jsworks_project"    />
+             <menuitem id="mi_a_jsworks_jour"        action="a_jsworks_jour"       />
+             <menuitem id="mi_a_jsworks_temps"        action="a_jsworks_temps"       />
+        </menuitem>
+        <menuitem id="mi_parametres" name="Paramètres">
+             <menuitem id="mi_a_jsworks_categorie"   action="a_jsworks_categorie"  />
              <menuitem id="mi_a_jsworks_state"       action="a_jsworks_state"      />
              <menuitem id="mi_a_jsworks_tag"         action="a_jsworks_tag"        />
              <menuitem id="mi_a_jsworks_type_tag"    action="a_jsworks_type_tag"   />
-             <menuitem id="mi_a_jsworks_work"        action="a_jsworks_work"       />
-             <menuitem id="mi_a_jsworks_jour"        action="a_jsworks_jour"       />
         </menuitem>
     </menuitem>
 </odoo>

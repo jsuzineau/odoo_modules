@@ -11,6 +11,7 @@
         <field name="arch" type="xml">
             <tree string="Works">
               <field name="partner_id" />
+              <field name="Temps" />
               <field name="Beginning" />
               <field name="End" />
               <field name="Description" />
@@ -29,6 +30,7 @@
                 <sheet>
                     <group>
                       <field name="partner_id" />
+                      <field name="Temps" />
                       <field name="Beginning" />
                       <field name="End" />
                       <field name="Description" />

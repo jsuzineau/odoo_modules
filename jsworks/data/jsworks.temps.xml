@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="jsworks.temps_1" model="jsworks.temps">
+            <field name="partner_id" ref="base.res_partner_1"/>
+            <field name="Debut">2023-12-01</field>
+            <field name="Fin">2023-12-31</field>
+        </record>
+    </data>>
+</odoo>

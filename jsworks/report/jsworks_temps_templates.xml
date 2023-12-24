@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="report_template_temps">
+        <t t-foreach="docs" t-as="temps">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2>
+                            <span t-field="temps.Debut"/>
+                            <span t-field="temps.Fin"/>
+                        </h2>
+                        <div>
+                            <strong>Description: </strong>
+                            <span t-field="temps.Description"/>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Détail</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="Works" t-value="temps.mapped('Works')"/>
+                                <tr t-foreach="Works" t-as="w">
+                                    <td>
+                                        <span t-field="w.Description"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

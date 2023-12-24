@@ -8,7 +8,7 @@
             <field name="partner_id" ref="base.res_partner_1"/><field name="D">2023-12-19</field><field name="Beginning">2023-12-19</field><field name="End">2023-12-19 23:03:33</field><field name="Description">troc       </field>
         </record>
         <record id="jsworks.work_3" model="jsworks.work">
-            <field name="partner_id" ref="base.res_partner_1"/><field name="D">2023-12-20</field><field name="Beginning">2023-12-19</field><field name="End">2023-12-20 23:03:33</field><field name="Description">20 décembre</field>
+            <field name="partner_id" ref="base.res_partner_1"/><field name="D">2023-12-20</field><field name="Beginning">2023-12-20</field><field name="End">2023-12-20 23:03:33</field><field name="Description">20 décembre</field>
         </record>
     </data>>
 </odoo>

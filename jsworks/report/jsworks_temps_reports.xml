@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="report_action_temps" model="ir.actions.report">
+        <field name="name">report_jour</field>
+        <field name="model">jsworks.temps</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">jsworks.report_template_temps</field>
+        <field name="report_file">jsworks.temps_templates</field>
+        <field name="print_report_name">'Temps_print_report_name'</field>
+        <field name="paperformat_id" ref="jsworks.paperformat_euro_lowmargin"/>
+        <field name="binding_model_id" ref="model_jsworks_temps"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
