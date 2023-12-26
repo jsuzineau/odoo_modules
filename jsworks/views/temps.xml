@@ -14,6 +14,8 @@
               <field name="Debut" />
               <field name="Fin" />
               <field name="Description" />
+              <field name="Duree" />
+              <field name="Taux_horaire" />
             </tree>
         </field>
     </record>
@@ -24,6 +26,7 @@
             <form string="Temps">
                 <header>
                     <button name="action_Connecte_Works" type="object" string="Connecte_Works"  />
+                    <button name="action_calcule_Duree" type="object" string="Calcule durée"  />
                     <button name="action_Facture" type="object" string="Facture"  />
                     <button type="action" name="%(jsworks.report_action_temps)d" string="Print"/>
                 </header>
@@ -33,6 +36,8 @@
                         <field name="Debut" />
                         <field name="Fin" />
                         <field name="Description" />
+                        <field name="Duree" />
+                        <field name="Taux_horaire" />
                     </group>
                     <notebook>
                         <page string="Works">

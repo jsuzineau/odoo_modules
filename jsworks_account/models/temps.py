@@ -16,8 +16,8 @@ class Temps(models.Model):
                                  Command.create(
                                                {
                                                "name":"Temps",
-                                               "quantity":10,
-                                               "price_unit":30
+                                               "quantity":self.Duree,
+                                               "price_unit":self.Taux_horaire
                                                }
                                                )
                                  ]

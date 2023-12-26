@@ -14,6 +14,7 @@
               <field name="Temps" />
               <field name="Beginning" />
               <field name="End" />
+              <field name="Duree" />
               <field name="Description" />
             </tree>
         </field>
@@ -26,6 +27,7 @@
                 <header>
                     <button name="action_Arreter" type="object" string="Arrêter"  />
                     <button name="action_Redemarrer" type="object" string="Redémarrer"  />
+                    <button name="action_calcule_Duree" type="object" string="Calcule durée"  />
                 </header>
                 <sheet>
                     <group>
@@ -35,6 +37,7 @@
                       <field name="End" />
                       <field name="Description" />
                       <field name="Project" />
+                      <field name="Duree" />
                     </group>
                     <notebook>
                         <page string="Developments">

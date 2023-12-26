@@ -10,8 +10,9 @@
                             <span t-field="temps.Fin"/>
                         </h2>
                         <div>
-                            <strong>Description: </strong>
-                            <span t-field="temps.Description"/>
+                            <strong>Description: </strong> <span t-field="temps.Description"/><br/>
+                            <strong>Durée: </strong> <span t-field="temps.Duree"/><br/>
+                            <strong>Taux horaire: </strong> <span t-field="temps.Taux_horaire"/><br/>
                         </div>
                         <table class="table">
                             <thead>
@@ -23,7 +24,8 @@
                                 <t t-set="Works" t-value="temps.mapped('Works')"/>
                                 <tr t-foreach="Works" t-as="w">
                                     <td>
-                                        <span t-field="w.Description"/>
+                                        <span t-field="w.Description"/><br/>
+                                        <strong>Durée: </strong> <span t-field="w.Duree"/><br/>
                                     </td>
                                 </tr>
                             </tbody>

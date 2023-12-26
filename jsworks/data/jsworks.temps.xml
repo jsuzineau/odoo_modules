@@ -5,6 +5,8 @@
             <field name="partner_id" ref="base.res_partner_1"/>
             <field name="Debut">2023-12-01</field>
             <field name="Fin">2023-12-31</field>
+            <field name="Description">Développements sur décembre 2023</field>
+            <field name="Taux_horaire">30</field>
         </record>
     </data>>
 </odoo>
