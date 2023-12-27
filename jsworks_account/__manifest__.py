@@ -1,5 +1,5 @@
 {
-'name':"jsworks_account",
+'name':"jsWorks Factures",
 'license':"LGPL-3",
 'version': '1.0',
 'description':"Facturation jsWorks ",

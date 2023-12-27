@@ -1,5 +1,5 @@
 {
-'name':"jsworks",
+'name':"jsWorks",
 'license':"LGPL-3",
 'version': '1.0',
 'description':"jsWorks",
@@ -11,11 +11,8 @@
        'data/jsworks.state.csv',
        'data/jsworks.type_tag.csv',
        'data/jsworks.work.xml',
-       'data/jsworks.jour.xml',
        'data/jsworks.temps.xml',
        'report/jsworks_paperformat_euro_lowmargin.xml',
-       'report/jsworks_jour_reports.xml',
-       'report/jsworks_jour_templates.xml',
        'report/jsworks_temps_reports.xml',
        'report/jsworks_temps_templates.xml',
        'views/categorie.xml',
@@ -25,7 +22,6 @@
        'views/tag.xml',
        'views/type_tag.xml',
        'views/work.xml', 
-       'views/jour.xml',
        'views/temps.xml',
        'views/01_menu.xml',
        ]

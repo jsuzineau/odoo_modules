@@ -32,7 +32,6 @@ class Work(models.Model):
         if self.Beginning:
             self.D= fields.Date.to_date(self.Beginning)
 
-    Jour = fields.Many2one("jsworks.jour")
     Temps = fields.Many2one("jsworks.temps")
 
     Duree = fields.Float(compute="_compute_Duree")

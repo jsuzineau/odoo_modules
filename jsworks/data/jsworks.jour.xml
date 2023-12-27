@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-    <data noupdate="1">
-        <record id="jsworks.jour_1" model="jsworks.jour">
-            <field name="partner_id" ref="base.res_partner_1"/>
-            <field name="D">2023-12-19</field>
-        </record>
-    </data>>
-</odoo>
