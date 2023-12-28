@@ -25,10 +25,9 @@
         <field name="arch" type="xml">
             <form string="Temps">
                 <header>
-                    <button name="action_Connecte_Works" type="object" string="Connecte_Works"  />
-                    <button name="action_calcule_Duree" type="object" string="Calcule durée"  />
-                    <button name="action_Facture" type="object" string="Facture"  />
-                    <button type="action" name="%(jsworks.report_action_temps)d" string="Print"/>
+                    <button name="action_Connecte_Works" type="object" string="Connecte Works"  />
+                    <button name="action_Facture" type="object" string="Créer une facture"  />
+                    <button type="action" name="%(jsworks.report_action_temps)d" string="Télécharger en PDF"/>
                 </header>
                 <sheet>
                     <group>

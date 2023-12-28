@@ -19,19 +19,10 @@ class Temps(models.Model):
 
     Works= fields.One2many("jsworks.work","Temps")
 
-    Duree = fields.Float(compute="_compute_Duree")
-
-    def _calcule_Duree_interne(self, works):
-        for w in works:
-            w.action_calcule_Duree()
-        return sum([w.Duree for w in works])
-
+    Duree = fields.Float(compute="_compute_Duree", digits=(10,2))
     @api.depends("Works")
     def _compute_Duree(self):
         for record in self:
-            record.Duree= self._calcule_Duree_interne( record.Works)
-
-    def action_calcule_Duree(self):
-        self.Duree = self._calcule_Duree_interne( self.Works)
+            record.Duree= sum([w.Duree for w in record.Works])
 
     Taux_horaire = fields.Float()

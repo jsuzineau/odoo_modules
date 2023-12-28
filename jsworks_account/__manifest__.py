@@ -6,5 +6,6 @@
 'depends':['account','jsworks'],
 'application':True,
 'data':[
+       'views/temps.xml',
        ]
 }

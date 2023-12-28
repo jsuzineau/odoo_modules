@@ -34,18 +34,11 @@ class Work(models.Model):
 
     Temps = fields.Many2one("jsworks.temps")
 
-    Duree = fields.Float(compute="_compute_Duree")
-
-    def _calcule_Duree_interne(self, work):
-        delta = work.End - work.Beginning
-        result=   delta.total_seconds() / 3600
-        print("delta:", delta, "  result=", result)
-        return result
-
+    Duree = fields.Float(compute="_compute_Duree", digits=(10,2))
     @api.depends("Beginning")
     @api.depends("End")
     def _compute_Duree(self):
-        for record in self:
-            record.Duree= self._calcule_Duree_interne( record)
-    def action_calcule_Duree(self):
-        self.Duree = self._calcule_Duree_interne( self)
+        for work in self:
+            delta = work.End - work.Beginning
+            work.Duree= delta.total_seconds() / 3600
+            print("delta:", delta, "  work.Duree=", work.Duree)

@@ -27,7 +27,6 @@
                 <header>
                     <button name="action_Arreter" type="object" string="Arrêter"  />
                     <button name="action_Redemarrer" type="object" string="Redémarrer"  />
-                    <button name="action_calcule_Duree" type="object" string="Calcule durée"  />
                 </header>
                 <sheet>
                     <group>
