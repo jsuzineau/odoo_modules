@@ -10,6 +10,7 @@
        'data/jsworks.categorie.csv',
        'data/jsworks.state.csv',
        'data/jsworks.type_tag.csv',
+       'data/jsworks.tag.xml',
        'data/jsworks.work.xml',
        'data/jsworks.temps.xml',
        'report/jsworks_paperformat_euro_lowmargin.xml',

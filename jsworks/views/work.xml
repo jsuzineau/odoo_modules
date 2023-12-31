@@ -37,6 +37,7 @@
                       <field name="Description" />
                       <field name="Project" />
                       <field name="Duree" />
+                      <field name="Tags" widget="many2many_tags"/>
                     </group>
                     <notebook>
                         <page string="Developments">

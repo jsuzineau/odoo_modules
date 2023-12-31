@@ -24,6 +24,11 @@
                         <field name="Name" />
                         <field name="Type" />
                     </group>
+                    <notebook>
+                        <page string="Works">
+                            <field name="Works" />
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>

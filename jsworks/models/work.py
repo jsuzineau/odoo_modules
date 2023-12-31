@@ -42,3 +42,5 @@ class Work(models.Model):
             delta = work.End - work.Beginning
             work.Duree= delta.total_seconds() / 3600
             print("delta:", delta, "  work.Duree=", work.Duree)
+
+    Tags=fields.Many2many("jsworks.tag")

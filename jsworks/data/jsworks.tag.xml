@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="jsworks.tag_1" model="jsworks.tag">
+            <field name="Name">Truc</field>
+        </record>
+        <record id="jsworks.tag_2" model="jsworks.tag">
+            <field name="Name">Troc</field>
+        </record>
+        <record id="jsworks.tag_3" model="jsworks.tag">
+            <field name="Name">Tric</field>
+        </record>
+    </data>>
+</odoo>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <odoo>
-    <menuitem id="mi_jsWorks" name="jsworks">
+    <menuitem id="mi_jsWorks" name="jsWorks">
         <menuitem id="miWork" name="Works">
              <menuitem id="mia_jsworks_work"        action="a_jsworks_work"       />
              <menuitem id="mia_jsworks_temps"        action="a_jsworks_temps"       />
