@@ -18,7 +18,7 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Détail</th>
+                                    <th>Détail Général</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -28,6 +28,40 @@
                                         <span t-field="w.Beginning"/><br/>
                                         <span t-field="w.Description"/><br/>
                                         <strong>Durée: </strong> <span t-field="w.Duree"/><br/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Détail par tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="Tags" t-value="temps.mapped('Tags')"/>
+                                <tr t-foreach="Tags" t-as="tt">
+                                    <td>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <span t-field="tt.Tag.Name"/>
+                                                        <strong>Durée: </strong> <span t-field="tt.Duree"/>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <t t-set="Works" t-value="tt.mapped('Works')"/>
+                                                <tr t-foreach="Works" t-as="w">
+                                                    <td>
+                                                        <span t-field="w.Beginning"/><br/>
+                                                        <span t-field="w.Description"/><br/>
+                                                        <strong>Durée: </strong> <span t-field="w.Duree"/><br/>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </td>
                                 </tr>
                             </tbody>

@@ -7,4 +7,5 @@ jsworks.access_jsworks_tag,access_jsworks_tag,model_jsworks_tag,base.group_user,
 jsworks.access_jsworks_type_tag,access_jsworks_type_tag,model_jsworks_type_tag,base.group_user,1,1,1,1
 jsworks.access_jsworks_work,access_jsworks_work,model_jsworks_work,base.group_user,1,1,1,1
 jsworks.access_jsworks_temps,access_jsworks_temps,model_jsworks_temps,base.group_user,1,1,1,1
+jsworks.access_jsworks_temps_tag,access_jsworks_temps_tag,model_jsworks_temps_tag,base.group_user,1,1,1,1
 

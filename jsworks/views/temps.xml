@@ -42,6 +42,9 @@
                         <page string="Works">
                             <field name="Works" />
                         </page>
+                        <page string="Tags">
+                            <field name="Tags" />
+                        </page>
                     </notebook>
                 </sheet>
             </form>

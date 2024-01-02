@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="a_jsworks_temps_tag" model="ir.actions.act_window">
+        <field name="name">Temps_Tag</field>
+        <field name="res_model">jsworks.temps_tag</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="jsworks_temps_tag_view_tree" model="ir.ui.view">
+        <field name="name">jsworks.temps_tag.tree</field>
+        <field name="model">jsworks.temps_tag</field>
+        <field name="arch" type="xml">
+            <tree string="Temps_Tags">
+              <field name="Name" />
+            </tree>
+        </field>
+    </record>
+    <record id="jsworks_temps_tag_view_form" model="ir.ui.view">
+        <field name="name">jsworks.temps_tag.form</field>
+        <field name="model">jsworks.temps_tag</field>
+        <field name="arch" type="xml">
+            <form string="Temps_Tag">
+                <sheet>
+                    <group>
+                        <field name="Tag" />
+                    </group>
+                    <notebook>
+                        <page string="Works">
+                            <field name="Works" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

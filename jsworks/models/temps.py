@@ -12,6 +12,15 @@ class Temps(models.Model):
         works= self.env['jsworks.work'].search([("D",">=",self.Debut),("D","<=",self.Fin),("partner_id.id","=",self.partner_id.id)])
         for w in works:
             w.Temps = self
+            for t in w.Tags:
+                if not (t.id in [tt.Tag.id for tt in self.Tags]):
+                    #self.update({'Tags': [(fields.Command.link(t.id))] })
+                    self.update({'Tags': [(fields.Command.create({'Tag': t.id}))]})
+                for tt in (tt for tt in self.Tags if tt.Tag.id == t.id):
+                    if not (w.id in [ w.id for w in tt.Works]):
+                        tt.update({'Works': [(fields.Command.link(w.id))]})
+
+
     def action_Facture(self):
         print ("Parent jsworks.Jour.action_Facture")
         return True
@@ -26,3 +35,4 @@ class Temps(models.Model):
             record.Duree= sum([w.Duree for w in record.Works])
 
     Taux_horaire = fields.Float()
+    Tags = fields.One2many("jsworks.temps_tag","Temps")
