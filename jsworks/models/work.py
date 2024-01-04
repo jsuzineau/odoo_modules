@@ -34,13 +34,14 @@ class Work(models.Model):
 
     Temps = fields.Many2one("jsworks.temps")
 
-    Duree = fields.Float(compute="_compute_Duree", digits=(10,2))
+    Duree = fields.Float(compute='_compute_Duree', digits=(10,2), store=True)
     @api.depends("Beginning")
     @api.depends("End")
     def _compute_Duree(self):
         for work in self:
-            delta = work.End - work.Beginning
-            work.Duree= delta.total_seconds() / 3600
-            print("delta:", delta, "  work.Duree=", work.Duree)
+            if work and work.End:
+                delta = work.End - work.Beginning
+                work.Duree= delta.total_seconds() / 3600
+                print("delta:", delta, "  work.Duree=", work.Duree)
 
     Tags=fields.Many2many("jsworks.tag")

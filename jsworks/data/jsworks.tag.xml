@@ -2,13 +2,13 @@
 <odoo>
     <data noupdate="1">
         <record id="jsworks.tag_1" model="jsworks.tag">
-            <field name="Name">Truc</field>
+            <field name="Name">Tag_1</field>
         </record>
         <record id="jsworks.tag_2" model="jsworks.tag">
-            <field name="Name">Troc</field>
+            <field name="Name">Tag_2</field>
         </record>
         <record id="jsworks.tag_3" model="jsworks.tag">
-            <field name="Name">Tric</field>
+            <field name="Name">Tag_3</field>
         </record>
     </data>>
 </odoo>
