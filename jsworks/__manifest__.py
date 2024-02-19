@@ -3,6 +3,8 @@
 'license':"LGPL-3",
 'version': '1.0',
 'description':"jsWorks",
+'author': "Jean SUZINEAU",
+'website': "https://github.com/jsuzineau/odoo_modules",
 'depends':['base'],
 'application':True,
 'data':[

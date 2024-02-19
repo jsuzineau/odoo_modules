@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="report_template_temps">
+        <t t-foreach="docs" t-as="temps">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2>
+                            Détail de la facture<br/>
+                            <span t-field="temps.Facture"/><br/>
+                            du <span t-field="temps.Debut"/> au <span t-field="temps.Fin"/>
+                        </h2>
+                        <div>
+                            <strong>Description: </strong> <span t-field="temps.Description"/><br/>
+                            <strong>Durée: </strong> <span t-field="temps.Duree"/><br/>
+                            <strong>Taux horaire: </strong> <span t-field="temps.Taux_horaire"/><br/>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Détail Général</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="Works" t-value="temps.mapped('Works')"/>
+                                <tr t-foreach="Works" t-as="w">
+                                    <td>
+                                        <span t-field="w.Beginning"/><br/>
+                                        <span t-field="w.Description"/><br/>
+                                        <strong>Durée: </strong> <span t-field="w.Duree"/><br/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Détail par tag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="Tags" t-value="temps.mapped('Tags')"/>
+                                <tr t-foreach="Tags" t-as="tt">
+                                    <td>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <span t-field="tt.Tag.Name"/>
+                                                        <strong>Durée: </strong> <span t-field="tt.Duree"/>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <t t-set="Works" t-value="tt.mapped('Works')"/>
+                                                <tr t-foreach="Works" t-as="w">
+                                                    <td>
+                                                        <span t-field="w.Beginning"/><br/>
+                                                        <span t-field="w.Description"/><br/>
+                                                        <strong>Durée: </strong> <span t-field="w.Duree"/><br/>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

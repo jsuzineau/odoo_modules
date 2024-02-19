@@ -15,6 +15,7 @@ class Work(models.Model):
     def action_Arreter(self):
         for record in self:
             record.End= fields.Datetime.now()
+            record._compute_Duree() #apparemment _compute_Duree n'est pas appelé automatiquement dans ce cas
         return True
     def action_Redemarrer(self):
         self.action_Arreter()

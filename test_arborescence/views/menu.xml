@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<odoo>
+    <menuitem id="test_arborescence_menu_root" name="test_arborescence">
+        <menuitem id="test_arborescence_first_level_menu" name="test_arborescence">
+                         <menuitem id="test_arborescence_arbre_action_menu_item" action="test_arborescence_arbre_action"/>
+ 
+        </menuitem>
+    </menuitem>
+</odoo>

@@ -6,8 +6,7 @@
                 <t t-call="web.external_layout">
                     <div class="page">
                         <h2>
-                            Détail de la facture<br/>
-                            <span t-field="temps.Facture"/><br/>
+                            Détail <br/>
                             du <span t-field="temps.Debut"/> au <span t-field="temps.Fin"/>
                         </h2>
                         <div>
