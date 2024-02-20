@@ -1,4 +1,6 @@
 # Very minimalist documentation
+Source code of the generator can be found at
+https://github.com/jsuzineau/pascal_o_r_mapping/tree/TjsDataContexte/tools/Generateur
 
 ## Programs
 - Generateur: source code generator working on database defined in etc/_Configuration.ini
